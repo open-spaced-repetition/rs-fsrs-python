@@ -1,0 +1,15 @@
+[package]
+name = "rs-fsrs-python"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rs_fsrs_python"
+crate-type = ["cdylib"]
+doc = false
+
+[dependencies]
+pyo3 ={version = "0.22.0", features = ["chrono"]}
+fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs" }
+chrono ={ version ="0.4.38", features = ["serde"]}
