@@ -10,6 +10,6 @@ crate-type = ["cdylib"]
 doc = false
 
 [dependencies]
-pyo3 ={version = "0.22.0", features = ["chrono"]}
-fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs", rev = "1bdd482" }
-chrono ={ version ="0.4.38", features = ["serde"]}
+pyo3 = { version = "0.22.0", features = ["chrono", "gil-refs"] }
+fsrs = { git = "https://github.com/open-spaced-repetition/rs-fsrs", rev = "5e6d336" }
+chrono = { version = "0.4.38", features = ["serde"] }
